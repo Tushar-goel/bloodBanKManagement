@@ -1,0 +1,60 @@
+#main_img{
+	height:349px;
+	width:100%;
+	float:left;
+	
+}
+#img {
+    height: 375px;
+    width: 85.0%;
+    float: left;
+    background-image: url(../../../assets/image/BDTP.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+#outer1{
+    height: 900px;
+    width: 85%;
+    float: left;
+    margin-left: 100px;
+    background-color: #FEF5B2;
+    margin-top: 28px;
+}
+#about{
+    height: 50px;
+    width: 97.4%;
+    float: left;
+    text-align: center;
+    background-color: #FEF5B2;
+    margin-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    font-size: x-large;
+    font-weight: 800;
+    font-style: normal;
+}
+#content{
+    height: 400px;
+    width: 45%;
+    float: left;
+    background-color:#FEF5B2;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#image_right{
+    height: 430px;
+    width: 48%;
+    float: left;
+    background-image: url(../../../assets/image/5.jpg);
+    background-size: cover;
+    margin-left: 570px;
+    margin-top: -420px;
+}

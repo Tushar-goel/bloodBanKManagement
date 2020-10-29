@@ -1,0 +1,118 @@
+#main_img{
+	height:349px;
+	width:100%;
+	float:left;
+	
+}
+#img {
+    height: 375px;
+    width: 85.0%;
+    float: left;
+    background-image: url(../../../assets/image/BDTP.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+#welcome {
+    height: 15px;
+    width: 79.7%;
+    float: left;
+    background-color: #FEF5B2;
+    font-family: georgia;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 35px;
+    margin-top: 28px;
+    margin-left: 100px;
+    text-align: center;
+}
+#para{
+	height:80px;
+	width:83.5%;
+	float:left;
+	background-color:#FEF5B2;
+	font-family:georgia;
+	font-size:16px;
+	margin-top:0px;
+	padding:10px;
+    margin-left:100px;
+    
+}
+#bottom{
+    height: 430px;
+    width: 85%;
+    float: left;
+    margin-left: 100px;
+    background-color: #FEF5B2;
+}
+#box1{
+    height: 350px;
+    width: 48.9%;
+    float: left;
+    margin-top: 0px;
+    background-image: url(../../../assets/image/2.jpg);
+    background-size: cover;
+    margin-left: -553px;
+    margin-top: 58px;
+}
+#heading1{
+        height: 40px;
+        width: 47%;
+        float: left;
+        margin-left: 0px;
+        text-align: center;
+        font-weight: 1000;
+        margin-left: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
+        color:#ffffff;
+        background-color: #A70000;
+
+
+
+}
+ #box2{
+    height: 350px;
+    width: 44.7%;
+    float: left;
+    background-image: url(../../../assets/image/blood.jpg);
+    background-size: cover;
+    margin-left: 600px;
+    margin-top: -350px;
+}   
+#heading2{
+        height: 40px;
+        width: 43%;
+        float: left;
+        margin-left: 0px;
+        text-align: center;
+        font-weight: 1000;
+        margin-left: 600px;
+        margin-top: -410px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
+        color:#ffffff;
+        background-color: #A70000;
+
+}
+#lastpart{
+    height: 770px;
+    width: 82.9%;
+    float: left;
+    margin-left: 100px;
+    background-color: #FEF5B2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+#donateblood{
+    height:600px;
+    width: 104%;
+    float: left;
+    margin-left: -15px;
+    background-color: yellow;
+    background-image: url(../../../assets/image/ssssssssssssss.jpg);    
+    background-size: cover;
+}

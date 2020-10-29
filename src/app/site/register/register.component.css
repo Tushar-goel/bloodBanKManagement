@@ -1,0 +1,41 @@
+#main_img{
+	height:349px;
+	width:100%;
+	float:left;
+	
+}
+#img {
+    height: 375px;
+    width: 85.0%;
+    float: left;
+    background-image: url(../../../assets/image/BDTP.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+#register_outer{
+    height: 800px;
+    width: 85%;
+    float: left;
+    margin-left: 100px;
+    background-color: #FEF5B2;
+}
+#reg_img{
+    height: 700px;
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+    background-color: #ffffff;
+    background-image: url(../../../assets/image/dontate_invite.png);
+    background-image: cover;
+    margin-top: 30px;
+}
+#reg_form{
+    height: 700px;
+    width: 50%;
+    float: left;
+    margin-left: 550px;
+    margin-top: -400px;
+    background-color:#ffffff;
+    margin-top: -700px;
+}

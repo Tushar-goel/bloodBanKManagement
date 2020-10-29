@@ -1,0 +1,68 @@
+#main_img{
+	height:349px;
+	width:100%;
+	float:left;
+	
+}
+#img {
+    height: 347px;
+    width: 85.0%;
+    float: left;
+    background-image: url(../../../assets/image/BDTP.jpg);
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 2px;
+}
+#contact_outer{
+    
+        height: 500px;
+        width: 85%;
+        float: left;
+        margin-left:100px;
+        background-color:#FEF5B2;
+}
+    #contact {
+        height: 80px;
+        width: 85%;
+        float: left;
+        margin-left:100px;
+        background-color:#FEF5B2;
+        text-align: center;
+        font-size: x-large;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+    #contactmain{
+        height: 350px;
+        width: 40%;
+        float: left;
+        margin-left:30px;
+        font-family: Georgia;
+        background-color:#FEF5B2;
+        text-align: center;
+        margin-top: 30px;
+        font-size: x-large;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+
+    }
+    #contactmain1{
+        height: 350px;
+        width: 40%;
+        float: left;
+        margin-left:620px;
+        font-family: Georgia;
+        background-color:#FEF5B2;
+        margin-top: -470px;
+        font-size: x-large;
+        font-weight: 800;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: normal;
+
+        
+
+        
+
+    }
