@@ -1,42 +1,52 @@
- 
-    <div id="main_img">
-        <div id="img">
-        </div>
+<div id="main_img">
+    <div id="img">
     </div>
-    <div id="register_outer">
-        <div id="reg_img">
-            </div>
-        <div id="reg_form"> 
-            <br><br>
-<h1><b>Register As Voluntary Blood Donar</b></h1>
-<form method="post" action="#" enctype="multipart/form-data">
-<table>
-<tr>
-<td>Name:</td><td><input type="text" name="name"><br></td>
-</tr>
-<tr>
-<td>Gender:</td><td><input type="radio" name="gender" value="Male"/>Male &nbsp; &nbsp;
-	   <input type="radio" name="gender" value="Female"/>Female<br></td>
-</tr>
-<tr>
-<td>Date Of Birth:</td><td><input type="text" name="DOB"/></td>
-</tr>
-<tr>
-<td>Address:</td><td><textarea rows="3" cols="22" name="address"></textarea></td>
-</tr>
-<tr>
-<td>Blood Group:</td><td><input type="text" name="blood_group"/></td>
-</tr>
-<tr>
-<td>Mobile No.:</td><td><input type="text" name="mobile_no"/></td>
-</tr>
-<tr>
-<td>State:</td><td><input type="text" name="state"/></td>
-</tr>
-<tr>
-<td><input type="submit" value="Submit"></td>
-</tr>
-</table>
-</form>
-        </div>
-        </div>
+</div>
+<div id="register_outer">
+    <div id="reg_img">
+    </div>
+    <div id="reg_form">
+        <br><br>
+        <h1><b>Register As Voluntary Blood Donar</b></h1>
+        <form [formGroup]="registerForm">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" formControlName="fullname" placeholder="Enter your Name" name="name"><br></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="gender" value="Male" formControlName="gender" />Male &nbsp; &nbsp;
+                        <input type="radio" name="gender" value="Female" formControlName="gender" />Female<br></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email" formControlName="username" placeholder="Enter your Email"><br></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date" name="DOB" formControlName="dateofbirth" placeholder="Enter your DOB" /></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="3" cols="22" name="address" formControlName="address" placeholder="Enter your Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Blood Group:</td>
+                    <td><input type="text" name="blood_group" formControlName="bloodgroup" placeholder="Enter your Blood Group" /></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.:</td>
+                    <td><input type="number" name="mobile_no" formControlName="phone" placeholder="Enter your Mobile Number" /></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" name="state" formControlName="state" placeholder="Enter your State" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" (click)="submit()" [disabled]="!registerForm.valid"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

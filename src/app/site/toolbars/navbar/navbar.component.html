@@ -1,29 +1,23 @@
-<html>
-<head>
-<title>
-BLOOD BANK MANAGEMENT SYSTEM
-</title>
-</head>
-<body bgcolor="#A70000">
 <div id="outer">
-<div id="header">
-<div id="logo">
-</div>
-<div id="heading">
-<div id="heading1">
-<h1><b>BLOOD BANK MANAGEMENT<br> SYSTEM </b> </h1>
-<h3>HEALTH & FAMILY WELFARE DEPARTMENT</h3>
-</div>
-</div>
-</div>
+    <div id="header">
+        <div id="logo">
+        </div>
+        <div id="heading">
+            <div id="heading1">
+                <h1><b>BLOOD BANK MANAGEMENT<br> SYSTEM </b> </h1>
+                <h3>HEALTH & FAMILY WELFARE DEPARTMENT</h3>
+            </div>
+        </div>
+    </div>
 
-<!----close header------->
-<div id="nav">
-    <ul>
-                <li><a href="index.html">HOME </a></li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="register.html">REGISTER</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-    </ul>
+    <!----close header------->
+    <div id="nav">
+        <ul>
+            <li><a [routerLink]="['/']">HOME </a></li>
+            <li><a [routerLink]="['/','register']">REGISTER</a></li>
+            <li><a [routerLink]="['/','contact']">CONTACT US</a></li>
+            <li><a [routerLink]="['/','about']">ABOUT US</a></li>
+        </ul>
     </div>
     <!----close navigation bar------>
+</div>
