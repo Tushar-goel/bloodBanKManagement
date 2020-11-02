@@ -1,9 +1,9 @@
-#main_img{
-	height:349px;
-	width:100%;
-	float:left;
-	
+#main_img {
+    height: 349px;
+    width: 100%;
+    float: left;
 }
+
 #img {
     height: 375px;
     width: 85.0%;
@@ -13,6 +13,7 @@
     margin-left: 100px;
     margin-top: 2px;
 }
+
 #welcome {
     height: 15px;
     width: 79.7%;
@@ -26,26 +27,28 @@
     margin-left: 100px;
     text-align: center;
 }
-#para{
-	height:80px;
-	width:83.5%;
-	float:left;
-	background-color:#FEF5B2;
-	font-family:georgia;
-	font-size:16px;
-	margin-top:0px;
-	padding:10px;
-    margin-left:100px;
-    
+
+#para {
+    height: 80px;
+    width: 83.5%;
+    float: left;
+    background-color: #FEF5B2;
+    font-family: georgia;
+    font-size: 16px;
+    margin-top: 0px;
+    padding: 10px;
+    margin-left: 100px;
 }
-#bottom{
+
+#bottom {
     height: 430px;
     width: 85%;
     float: left;
     margin-left: 100px;
     background-color: #FEF5B2;
 }
-#box1{
+
+#box1 {
     height: 350px;
     width: 48.9%;
     float: left;
@@ -55,23 +58,22 @@
     margin-left: -553px;
     margin-top: 58px;
 }
-#heading1{
-        height: 40px;
-        width: 47%;
-        float: left;
-        margin-left: 0px;
-        text-align: center;
-        font-weight: 1000;
-        margin-left: 20px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding: 10px;
-        color:#ffffff;
-        background-color: #A70000;
 
-
-
+#heading1 {
+    height: 40px;
+    width: 47%;
+    float: left;
+    margin-left: 0px;
+    text-align: center;
+    font-weight: 1000;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #A70000;
 }
- #box2{
+
+#box2 {
     height: 350px;
     width: 38%;
     float: left;
@@ -79,45 +81,46 @@
     background-size: cover;
     margin-left: 700px;
     margin-top: -372px;
- }    
-#heading2{
-        height: 40px;
-        width: 43%;
-        float: left;
-        margin-left: 0px;
-        text-align: center;
-        font-weight: 1000;
-        margin-left: 600px;
-        margin-top: -410px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding: 10px;
-        color:#ffffff;
-        background-color: #A70000;
-
 }
 
-#bankouter{
+#heading2 {
+    height: 40px;
+    width: 43%;
+    float: left;
+    margin-left: 0px;
+    text-align: center;
+    font-weight: 1000;
+    margin-left: 600px;
+    margin-top: -410px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #A70000;
+}
+
+#bankouter {
     height: 650px;
     width: 85%;
     float: left;
     margin-left: 100px;
     background-color: yellow;
 }
-#bankleft{
+
+#bankleft {
     height: 600px;
     width: 50%;
     float: left;
     margin-left: 0px;
-    background-color:palevioletred;
+    background-color: palevioletred;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 5px;
     font-size: 16px;
     font-weight: 800;
     font-style: normal;
     text-align: center;
-
 }
-#bankright{
+
+#bankright {
     height: 600px;
     width: 50%;
     float: left;
@@ -132,16 +135,20 @@
     position: relative;
     margin-top: -610px;
     text-align: center;
-
-    
 }
-table{
+
+table {
     border: 1px solid black;
     text-align: center;
 }
 
+table,
+th,
+td {
+    border: 1px solid black;
+}
 
-#lastpart{
+#lastpart {
     height: 770px;
     width: 82.9%;
     float: left;
@@ -154,11 +161,11 @@ table{
     font-style: normal;
 }
 
-#donateblood{
-    height:600px;
+#donateblood {
+    height: 600px;
     width: 104%;
     float: left;
     margin-left: -15px;
-    background-image: url(../../../assets/image/ssssssssssssss.jpg);    
+    background-image: url(../../../assets/image/ssssssssssssss.jpg);
     background-size: cover;
 }

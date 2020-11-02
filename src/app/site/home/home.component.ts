@@ -9,6 +9,8 @@ import { ApiService } from 'src/app/shared/services/api.service';
 })
 export class HomeComponent implements OnInit {
 
+  allDonors = null;
+
   constructor(private _fb: FormBuilder, public api: ApiService) {}
 
   ngOnInit() {
@@ -17,8 +19,8 @@ export class HomeComponent implements OnInit {
 
   // gettting all donors 
   async getAllDonors(){
-    let data = await this.api.getAllDonors();
-    console.log(data,"get all donors")
+    this.allDonors = await this.api.getAllDonors();
+    console.log("get all donors")
   }
 
 }
