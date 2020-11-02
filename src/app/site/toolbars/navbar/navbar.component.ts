@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
 		this.router.events.pipe(filter((event) => event instanceof NavigationEnd))
 		.subscribe(res=>{
 			this.activeRoute = res['url'];
+			console.log(this.activeRoute,"active route")
 		});
 	
 	}

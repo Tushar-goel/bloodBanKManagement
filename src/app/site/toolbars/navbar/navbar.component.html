@@ -13,10 +13,10 @@
     <!----close header------->
     <div id="nav">
         <ul>
-            <li><a [routerLink]="['/']">HOME </a></li>
-            <li><a [routerLink]="['/','register']">REGISTER</a></li>
-            <li><a [routerLink]="['/','contact']">CONTACT US</a></li>
-            <li><a [routerLink]="['/','about']">ABOUT US</a></li>
+            <li><a [routerLink]="['/']" [ngClass]="{'active-header':activeRoute == '/'}">HOME </a></li>
+            <li><a [routerLink]="['/','register']" [ngClass]="{'active-header':activeRoute == '/register'}">REGISTER</a></li>
+            <li><a [routerLink]="['/','contact']" [ngClass]="{'active-header':activeRoute == '/contact'}">CONTACT US</a></li>
+            <li><a [routerLink]="['/','about']" [ngClass]="{'active-header':activeRoute == '/about'}">ABOUT US</a></li>
         </ul>
     </div>
     <!----close navigation bar------>

@@ -8,6 +8,9 @@
     <div id="reg_form">
         <br><br>
         <h1><b>Register As Voluntary Blood Donar</b></h1>
+        <div class="error-msg">
+            {{errorMessage}}
+        </div>
         <form [formGroup]="registerForm">
             <table>
                 <tr>

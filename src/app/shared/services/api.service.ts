@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, map, retry } from 'rxjs/operators';
 import { environment } from './../../../environments/environment';
 
 @Injectable()
@@ -13,11 +13,16 @@ export class ApiService {
 	constructor(private _http: HttpClient) {}
 
 	register(data: any) {
-		return this._http.get('http://localhost:4000/donar').toPromise();
-		
-		// return this._http
-		// 	.post(this._url + '/register', data)
-		// 	.pipe(map((res)=>this.extractData), catchError(this.handleAuthError));
+		return this._http
+			.post(this._url + '/register', data, this.post_options())
+			.pipe(map((res) => this.extractData(res)), catchError(this.handleAuthError))
+			.toPromise();
+	}
+
+	getAllDonors(){
+		return this._http.get(this._url + '/alldonors',this.get_options())
+		.pipe(map((res) => this.extractData(res)), catchError(this.handleAuthError))
+		.toPromise();	
 	}
 
 	setHeaders() {
@@ -25,8 +30,8 @@ export class ApiService {
 	}
 
 	get_options(type = null) {
-		this.headers = new HttpHeaders({ 
-			'Content-Type': 'application/json' 
+		this.headers = new HttpHeaders({
+			'Content-Type': 'application/json'
 		});
 		return Object.assign({ headers: this.headers });
 	}
@@ -38,13 +43,13 @@ export class ApiService {
 		return Object.assign({ headers: this.headers, method: 'post' });
 	}
 
-	extractData(res: Response) {
-		let body = res.json();
+	extractData(res: any) {
+		let body = res;
 		return body['data'] || {};
 	}
 
-	handleAuthError(error: Response) {
-		let body = error.json();
+	handleAuthError(error: any) {
+		let body = error.error;
 		if (body['error']) body = body['error'];
 		return throwError(body);
 	}

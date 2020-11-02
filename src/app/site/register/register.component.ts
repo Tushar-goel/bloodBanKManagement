@@ -10,12 +10,12 @@ import { GlobalValidator } from 'src/app/shared/validators/global.validator';
 })
 export class RegisterComponent implements OnInit {
 	registerForm: FormGroup;
-
-	constructor(private _fb: FormBuilder,public api:ApiService) {}
+	errorMessage = '';
+	constructor(private _fb: FormBuilder, public api: ApiService) {}
 
 	ngOnInit() {
-    this.initRegisterForm();
-  }
+		this.initRegisterForm();
+	}
 
 	// initializing register form
 	initRegisterForm() {
@@ -33,16 +33,17 @@ export class RegisterComponent implements OnInit {
 	}
 
 	async submit() {
-		try{
+		try {
+			// if (!this.registerForm.valid) return true;
 
 			let req = await this.api.register(this.registerForm.value);
-			
-			if (!this.registerForm.valid) return true;
-			
-			console.log(this.registerForm.value,"**");
+			console.log(this.registerForm.value, '**', req);
 			this.registerForm.reset();
-		}
-		catch(err){
+			alert("User Registered Successfully !!");
+		} catch (err) {
+			if (err.error.code == 11000) {
+				this.errorMessage = 'Email Already Registered !!';
+			}
 			console.log(err);
 		}
 	}
