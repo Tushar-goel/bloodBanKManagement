@@ -73,13 +73,13 @@
 }
  #box2{
     height: 350px;
-    width: 44.7%;
+    width: 38%;
     float: left;
     background-image: url(../../../assets/image/blood.jpg);
     background-size: cover;
-    margin-left: 600px;
-    margin-top: -350px;
-}   
+    margin-left: 700px;
+    margin-top: -372px;
+ }    
 #heading2{
         height: 40px;
         width: 43%;
@@ -95,6 +95,52 @@
         background-color: #A70000;
 
 }
+
+#bankouter{
+    height: 650px;
+    width: 85%;
+    float: left;
+    margin-left: 100px;
+    background-color: yellow;
+}
+#bankleft{
+    height: 600px;
+    width: 50%;
+    float: left;
+    margin-left: 0px;
+    background-color:palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+
+}
+#bankright{
+    height: 600px;
+    width: 50%;
+    float: left;
+    margin-left: 555px;
+    margin-top: 300px;
+    background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    position: relative;
+    margin-top: -610px;
+    text-align: center;
+
+    
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+}
+
+
 #lastpart{
     height: 770px;
     width: 82.9%;
@@ -107,12 +153,12 @@
     font-weight: 400;
     font-style: normal;
 }
+
 #donateblood{
     height:600px;
     width: 104%;
     float: left;
     margin-left: -15px;
-    background-color: yellow;
     background-image: url(../../../assets/image/ssssssssssssss.jpg);    
     background-size: cover;
 }
