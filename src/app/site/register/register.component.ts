@@ -32,11 +32,18 @@ export class RegisterComponent implements OnInit {
 		});
 	}
 
-	submit() {
-		this.api.register(this.registerForm.value);
-		if (!this.registerForm.valid) return true;
+	async submit() {
+		try{
 
-		console.log(this.registerForm.value,"**");
-		this.registerForm.reset();
+			let req = await this.api.register(this.registerForm.value);
+			
+			if (!this.registerForm.valid) return true;
+			
+			console.log(this.registerForm.value,"**");
+			this.registerForm.reset();
+		}
+		catch(err){
+			console.log(err);
+		}
 	}
 }
