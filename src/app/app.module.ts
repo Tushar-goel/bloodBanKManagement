@@ -6,6 +6,7 @@ import { CoreModule } from './core/core.module';
 import { routes } from './config/routes';
 import { SharedModule } from './shared/shared.module';
 import { SiteModule } from './site/site.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SiteModule } from './site/site.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     CoreModule.forRoot(),
     routes,
     SharedModule,

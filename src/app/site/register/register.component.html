@@ -40,11 +40,16 @@
                     <td><input type="number" name="mobile_no" formControlName="phone" placeholder="Enter your Mobile Number" /></td>
                 </tr>
                 <tr>
+                    <td>City:</td>
+                    <td><input type="text" name="city" formControlName="city" placeholder="Enter your City" /></td>
+                </tr>
+                <tr>
                     <td>State:</td>
                     <td><input type="text" name="state" formControlName="state" placeholder="Enter your State" /></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Submit" (click)="submit()" [disabled]="!registerForm.valid"></td>
+                    <td><input type="submit" value="Submit" (click)="submit()"></td>
+                    <!-- [disabled]="!registerForm.valid" -->
                 </tr>
             </table>
         </form>

@@ -4,9 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'http://localhost:4000/api/v1',
-  CLIENT_ID: 'godailyvery',
-  CLIENT_SECRET: '$2a$10$b7yLF1XkyAuXKwR9Fg.ZueDk5ldkFNnlPaaWPVg/u7EowuJ5ymMPC',
+  API: 'http://localhost:4000/',
 };
 
 /*
