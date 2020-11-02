@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ApiService } from 'src/app/shared/services/api.service';
 import { GlobalValidator } from 'src/app/shared/validators/global.validator';
 
 @Component({
@@ -10,7 +11,7 @@ import { GlobalValidator } from 'src/app/shared/validators/global.validator';
 export class RegisterComponent implements OnInit {
 	registerForm: FormGroup;
 
-	constructor(private _fb: FormBuilder) {}
+	constructor(private _fb: FormBuilder,public api:ApiService) {}
 
 	ngOnInit() {
     this.initRegisterForm();
@@ -26,11 +27,13 @@ export class RegisterComponent implements OnInit {
 			address: [ '', Validators.required ],
 			bloodgroup: [ '', Validators.required ],
 			phone: [ '', Validators.compose([ Validators.required, GlobalValidator.phoneFormat ]) ],
+			city: [ '', Validators.required ],
 			state: [ '', Validators.required ]
 		});
 	}
 
 	submit() {
+		this.api.register(this.registerForm.value);
 		if (!this.registerForm.valid) return true;
 
 		console.log(this.registerForm.value,"**");
