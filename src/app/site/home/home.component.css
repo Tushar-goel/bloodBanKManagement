@@ -1,3 +1,5 @@
+
+
 #main_img {
     height: 349px;
     width: 100%;
@@ -103,15 +105,15 @@
     width: 85%;
     float: left;
     margin-left: 100px;
-    background-color: yellow;
+    background-color: #FEF5B2;
 }
 
 #bankleft {
     height: 600px;
-    width: 50%;
+    width: 40%;
     float: left;
-    margin-left: 0px;
-    background-color: palevioletred;
+    margin-left: 100px;
+    background-color: #FEF5B2;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 5px;
     font-size: 16px;
@@ -119,14 +121,22 @@
     font-style: normal;
     text-align: center;
 }
-
+form{
+        padding:10px;
+        border-radius:5px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.9;
+        
+      
+}
 #bankright {
     height: 600px;
     width: 50%;
     float: left;
     margin-left: 555px;
-    margin-top: 300px;
-    background-color: red;
+    margin-top: 290px;
+    background-color: #FEF5B2;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 5px;
     font-size: 16px;
@@ -140,6 +150,8 @@
 table {
     border: 1px solid black;
     text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0.5rem;
 }
 
 table,
