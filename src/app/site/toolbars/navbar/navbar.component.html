@@ -1,7 +1,6 @@
 <div id="outer">
     <div id="header">
-        <div id="logo">
-        </div>
+        <img id="logo" src="../../../../assets/image/26a16cbe6c24539d6fec034e43716d2e.png" alt="">
         <div id="heading">
             <div id="heading1">
                 <h1><b>BLOOD BANK MANAGEMENT<br> SYSTEM </b> </h1>
@@ -14,8 +13,10 @@
     <div id="nav">
         <ul>
             <li><a [routerLink]="['/']" [ngClass]="{'active-header':activeRoute == '/'}">HOME </a></li>
-            <li><a [routerLink]="['/','register']" [ngClass]="{'active-header':activeRoute == '/register'}">REGISTER</a></li>
-            <li><a [routerLink]="['/','contact']" [ngClass]="{'active-header':activeRoute == '/contact'}">CONTACT US</a></li>
+            <li><a [routerLink]="['/','register']" [ngClass]="{'active-header':activeRoute == '/register'}">REGISTER</a>
+            </li>
+            <li><a [routerLink]="['/','contact']" [ngClass]="{'active-header':activeRoute == '/contact'}">CONTACT US</a>
+            </li>
             <li><a [routerLink]="['/','about']" [ngClass]="{'active-header':activeRoute == '/about'}">ABOUT US</a></li>
         </ul>
     </div>

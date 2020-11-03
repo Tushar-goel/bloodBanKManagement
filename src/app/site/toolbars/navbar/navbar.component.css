@@ -6,9 +6,7 @@
 #outer {
     height: 230px;
     width: 85%;
-    float: left;
     background-color: #FEF5B2;
-    margin-left: 100px;
 }
 
 #header {
@@ -19,15 +17,13 @@
 }
 
 #logo {
-    height: 159px;
-    width: 16%;
-    float: left;
-    background-image: url(../../../../assets/image/26a16cbe6c24539d6fec034e43716d2e.png);
-    background-size: 186px;
+    width: 150px;
+    height:150px;
 }
 
 #heading {
     height: 180px;
+    display: inline-block;
     width: 84%;
     float: left;
     background-color: #FEF5B2;
@@ -47,13 +43,12 @@
 #nav {
     height: 50px;
     width: 100%;
-    float: left;
+    /* float: left; */
 }
 
 #nav ul {
     height: 35px;
     background-color: #FEF5B2;
-    border: 1px solid #ffffff;
     padding-top: 15px;
     width: 96.5% !important;
     margin-left: 0px;
@@ -71,7 +66,7 @@
     color: black;
     font-weight: bold;
     padding-left: 60px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
     padding-right: 61px;
     padding-top: 10px;
     padding-bottom: 10px;

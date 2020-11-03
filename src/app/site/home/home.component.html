@@ -1,86 +1,74 @@
-<div id="main_img">
+<div id="main_img" class="center-content">
     <div id="img">
     </div>
 </div>
-<div id="welcome">
+<div id="welcome" class="center-content">
     <h1>
         WELCOME TO BLOOD BANK MANAGEMENT SYSTEM
     </h1>
 </div>
-<div id="para">
-    Blood Bank Management System (BBMS) is designed to store, process, retrieve and analyze information concerned with the administrative and inventory management within a blood bank. This project aims at maintaining all the information pertaining to blood
-    donors, different blood groups available in each blood bank and help them manage in a better way.
+<div id="para" class="center-content">
+    <p>Blood Bank Management System (BBMS) is designed to store, process, retrieve and analyze information concerned
+        with the administrative and inventory management within a blood bank. This project aims at maintaining all the
+        information pertaining to blood
+        donors, different blood groups available in each blood bank and help them manage in a better way.</p>
 </div>
 <div id=bottom>
     <div id="heading1">
         <a [routerLink]="['/','register']">DONATE BLOOD</a>
     </div>
-    <div id="box1">
-    </div>
     <div id="heading2">
         <a [routerLink]="['/','register']">GIVE BLOOD</a>
     </div>
-</div>
-<div id="box2">
+    <div id="box1">
+    </div>
+    <div id="box2">
+    </div>
 </div>
 
 
-<div id="bankouter">
+
+<div id="bankouter" class="center-content">
     <div id="bankleft">
-        <h1><b>Search For Blood Donor</b></h1><br>
+        <h1><b>Search For Blood Donor</b></h1>
         <h3>The blood you donate gives someone another chance at life.</h3>
         <h1>GIVE THE GIFT OF THE LIFE</h1>
-        <!-- <table tableborder="2" cellpadding="10"> -->
         <form>
-            <tr>
-                <td>Location</td>
-                <td>
-                    <select name="location">
-                            <option>----Select----</option>
-                            <option value="Tauranga">Tauranga</option>
-                            <option value="Hamilton">Hamilton</option>
-                            <option value="Coromandel">Coromandel</option>
-                            <option value="Rotorua">Rotorua</option>
-                            <option value="Taupo">Taupo</option>
-                            <option value="Auckland">Auckland</option>
-                            <option value="Christchurch">Christchurch</option>
-                            <option value="Katikati">Katikati</option>
-                            <option value="Wellington">Wellington</option>
-                            </select>
-                </td>
-            </tr>
-            <tr>
+            <div class="form-field">
+                <span>Location</span>
+                <select name="location">
+                    <option>----Select----</option>
+                    <option value="Tauranga">Tauranga</option>
+                    <option value="Hamilton">Hamilton</option>
+                    <option value="Coromandel">Coromandel</option>
+                    <option value="Rotorua">Rotorua</option>
+                    <option value="Taupo">Taupo</option>
+                    <option value="Auckland">Auckland</option>
+                    <option value="Christchurch">Christchurch</option>
+                    <option value="Katikati">Katikati</option>
+                    <option value="Wellington">Wellington</option>
+                </select>
+            </div>
 
-            </tr>
-            <tr>
-                <td>Blood Group</td>
-                <td>
-                    <select name="bgroup">
-                            <option>----Select----</option>
-                            <option value="O+">O+</option>
-                            <option value="O-">O-</option>
-                            <option value="A+">A+</option>
-                            <option value="A-">A-</option>
-                            <option value="B+">B+</option>
-                            <option value="B-">B-</option>
-                            <option value="AB+">AB+</option>
-                            <option value="AB-">AB-</option>
-
-                        </select>
-                </td>
-            </tr>
-            <tr>
-
-            </tr>
-            <br>
-            <tr>
-                <td><input type="submit" value="Submit" name="submit"></td>
-            </tr>
+            <div class="form-field">
+            <span>Blood Group</span>
+            <select name="bgroup">
+                <option>----Select----</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+        <div class="form-field">
+            <input type="submit" value="Submit" name="submit">
+        </div>
         </form>
-        <!-- </table> -->
     </div>
-    <br>
-
     <div id="bankright">
         <h1><b>Thanks To Our Donors</b></h1>
         <h1>Donor Report</h1>
@@ -108,10 +96,11 @@
 </div>
 
 
-<div id="lastpart">
+<div id="lastpart" class="center-content">
     <h1>World Blood Donors Day</h1>
-    <p>Every year, on 14 June, countries around the world celebrate World Blood Donor Day. The event serves to raise awareness of the need for safe blood and blood products and to thank blood donors for their life-saving gifts of blood.
-    </p><br>
-    <div id="donateblood">
-    </div>
+    <p>Every year, on 14 June, countries around the world celebrate World Blood Donor Day. The event serves to raise
+        awareness of the need for safe blood and blood products and to thank blood donors for their life-saving gifts of
+        blood.
+    </p>
 </div>
+<div id="donateblood"></div>
