@@ -36,7 +36,13 @@
                 </tr>
                 <tr>
                     <td>Blood Group:</td>
-                    <td><input type="text" name="blood_group" formControlName="bloodgroup" placeholder="Enter your Blood Group" /></td>
+                    <td>
+                        <!-- <input type="text" name="blood_group" formControlName="bloodgroup" placeholder="Enter your Blood Group" /> -->
+                        <select name="bgroup" formControlName="bloodgroup">
+                            <option value="" disabled selected>Select Blood Group</option>
+                            <option *ngFor="let blood of filterObj.bloodGroup" [value]="blood">{{blood}}</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mobile No.:</td>
@@ -48,11 +54,16 @@
                 </tr>
                 <tr>
                     <td>State:</td>
-                    <td><input type="text" name="state" formControlName="state" placeholder="Enter your State" /></td>
+                    <td>
+                        <!-- <input type="text" name="state" formControlName="state" placeholder="Enter your State" /> -->
+                        <select name="bgroup" formControlName="state">
+                            <option value="" disabled selected>Select State</option>
+                            <option *ngFor="let state of filterObj.States" [value]="state">{{state}}</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="Submit" (click)="submit()"></td>
-                    <!-- [disabled]="!registerForm.valid" -->
+                    <td><input type="submit" value="Submit" (click)="submit()" [disabled]="!registerForm.valid"></td>
                 </tr>
             </table>
         </form>

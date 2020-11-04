@@ -8,10 +8,8 @@
     </h1>
 </div>
 <div id="para" class="center-content">
-    <p>Blood Bank Management System (BBMS) is designed to store, process, retrieve and analyze information concerned
-        with the administrative and inventory management within a blood bank. This project aims at maintaining all the
-        information pertaining to blood
-        donors, different blood groups available in each blood bank and help them manage in a better way.</p>
+    <p>Blood Bank Management System (BBMS) is designed to store, process, retrieve and analyze information concerned with the administrative and inventory management within a blood bank. This project aims at maintaining all the information pertaining to
+        blood donors, different blood groups available in each blood bank and help them manage in a better way.</p>
 </div>
 <div id=bottom>
     <div id="heading1">
@@ -36,42 +34,43 @@
         <form>
             <div class="form-field">
                 <span>Location</span>
-                <select name="location">
-                    <option>----Select----</option>
-                    <option value="Tauranga">Tauranga</option>
+                <select name="location" (change)="fetchingValue('state',$event.target.value)">
+                    <option value="Select State" disabled selected>Select State</option>
+                    <!-- <option value="Tauranga">Tauranga</option>
                     <option value="Hamilton">Hamilton</option>
                     <option value="Coromandel">Coromandel</option>
                     <option value="Rotorua">Rotorua</option>
                     <option value="Taupo">Taupo</option>
                     <option value="Auckland">Auckland</option>
                     <option value="Christchurch">Christchurch</option>
-                    <option value="Katikati">Katikati</option>
-                    <option value="Wellington">Wellington</option>
+                    <option value="Katikati">Katikati</option> -->
+                    <option *ngFor="let state of filterObj.States" [value]="state" >{{state}}</option>
                 </select>
             </div>
 
             <div class="form-field">
-            <span>Blood Group</span>
-            <select name="bgroup">
-                <option>----Select----</option>
-                <option value="O+">O+</option>
+                <span>Blood Group</span>
+                <select name="bgroup" (change)="fetchingValue('bloodGroup',$event.target.value)">
+                <option value="Select Blood Group" disabled selected>Select Blood Group</option>
+                <!-- <option value="O+">O+</option>
                 <option value="O-">O-</option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
                 <option value="B+">B+</option>
                 <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
+                <option value="AB+">AB+</option> -->
+                <option *ngFor="let blood of filterObj.bloodGroup" [value]="blood">{{blood}}</option>
             </select>
-        </div>
-        <div class="form-field">
-            <input type="submit" value="Submit" name="submit">
-        </div>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Submit" name="submit" (click)="applyFilter()">
+            </div>
         </form>
     </div>
     <div id="bankright">
         <h1><b>Thanks To Our Donors</b></h1>
         <h1>Donor Report</h1>
+        <input type="submit" value="Reset User Details" name="reset" (click)="getAllDonors()">
 
         <table tableborder="1" cellpadding="10">
 
@@ -81,7 +80,7 @@
                 <th>Gender</th>
                 <th>Mobile_no</th>
                 <th>Blood group</th>
-                <th>Address</th>
+                <th>state</th>
             </tr>
             <tr *ngFor="let member of allDonors">
                 <td>{{member?.name |titlecase}}</td>
@@ -89,7 +88,7 @@
                 <td>{{member?.gender}}</td>
                 <td>{{member?.mobile}}</td>
                 <td>{{member?.bloodGroup}}</td>
-                <td>{{member?.address}}</td>
+                <td>{{member?.state}}</td>
             </tr>
         </table>
     </div>
@@ -98,9 +97,7 @@
 
 <div id="lastpart" class="center-content">
     <h1>World Blood Donors Day</h1>
-    <p>Every year, on 14 June, countries around the world celebrate World Blood Donor Day. The event serves to raise
-        awareness of the need for safe blood and blood products and to thank blood donors for their life-saving gifts of
-        blood.
+    <p>Every year, on 14 June, countries around the world celebrate World Blood Donor Day. The event serves to raise awareness of the need for safe blood and blood products and to thank blood donors for their life-saving gifts of blood.
     </p>
 </div>
 <div id="donateblood"></div>

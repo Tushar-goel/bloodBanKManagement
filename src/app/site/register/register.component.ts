@@ -11,6 +11,10 @@ import { GlobalValidator } from 'src/app/shared/validators/global.validator';
 export class RegisterComponent implements OnInit {
 	registerForm: FormGroup;
 	errorMessage = '';
+	filterObj = {
+		States:['Tauranga','Hamilton','Coromandel','Rotorua','Taupo','Auckland','Christchurch','Katikati','Wellington'],
+		bloodGroup:['O+','O-','A+','A-','B+','B-','AB+','AB-']
+	  };
 	constructor(private _fb: FormBuilder, public api: ApiService) {}
 
 	ngOnInit() {
@@ -34,10 +38,10 @@ export class RegisterComponent implements OnInit {
 
 	async submit() {
 		try {
-			// if (!this.registerForm.valid) return true;
+			if (!this.registerForm.valid) return true;
 
 			let req = await this.api.register(this.registerForm.value);
-			console.log(this.registerForm.value, '**', req);
+			console.log(this.registerForm.value, '**',);
 			this.registerForm.reset();
 			alert("User Registered Successfully !!");
 		} catch (err) {

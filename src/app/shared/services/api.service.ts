@@ -25,6 +25,13 @@ export class ApiService {
 		.toPromise();	
 	}
 
+	filterDonors(data: any) {
+		return this._http
+			.post(this._url + '/filterdonors', data, this.post_options())
+			.pipe(map((res) => this.extractData(res)), catchError(this.handleAuthError))
+			.toPromise();
+	}
+
 	setHeaders() {
 		this.headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 	}
