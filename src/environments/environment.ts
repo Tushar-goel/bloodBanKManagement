@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'http://localhost:4000',
+  API: 'https://blood-bank-mng.herokuapp.com',
 };
 
 /*
